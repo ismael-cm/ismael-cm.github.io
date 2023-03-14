@@ -17,12 +17,14 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
-        
+
         <a href="/">
             <img src="" class="main-logo" alt="">
         </a>
@@ -54,6 +56,23 @@
         </div>
     </nav>
     <h1 class="d-flex justify-content-center mt-4">Portfolio</h1>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          }
+        }
+      </script> 
+
+    <div id="app"></div>
+
+    <script type="module">
+        import { createApp } from 'vue'
+        import MyComponent from './vue/my-component.js'
+
+        createApp(MyComponent).mount('#app')
+    </script>
 </body>
 
 </html>
