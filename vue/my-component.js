@@ -28,7 +28,7 @@ export default {
         class="alert primary  p-1 position-absolute alert-custom d-flex align-items-center justify-content-center"
         >
 
-        <span class="ms-2 w-100">Anita preciosa y tiernita </span>
+        <span class="ms-2 w-100">Anita</span>
         <div class="w-100 d-flex justify-content-end">
             <span
             class="sm-padding medium me-3 py-1"
